@@ -1,0 +1,6 @@
+---
+# handlers file for filebeat
+- name: "Restart Filebeat Linux"
+  service:
+    name: "{{ filebeat_service }}"
+    state: "restarted"
